@@ -15,7 +15,8 @@ async function checkCache(currency) {
     } else {
         const data = JSON.parse(result);
         if (data.expiration <= Date.now()) {
-            const newData = { expiration: Date.now() + 86400 * 1000, exchanges: await fetchCurrencyExchange(currency) };
+            const expiration = Date.now() + 86400 * 1000; //Date today + 24hrs
+            const newData = { expiration: expiration, exchanges: await fetchCurrencyExchange(currency) };
             localStorage.setItem(currency, JSON.stringify(newData));
         }
     }
