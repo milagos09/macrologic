@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./styles.css" />
+        <script src="./script.js" defer></script>
+        <title>JavaScript Developer Exam</title>
+    </head>
+    <body>
+        <header>
+            <select id="currencies">
+                <option value="usd">USD</option>
+                <option value="eur">EUR</option>
+                <option value="aud">AUD</option>
+                <option value="cad">CAD</option>
+                <option value="chf">CHF</option>
+                <option value="nzd">NZD</option>
+                <option value="bgn">BGN</option>
+            </select>
+            <div id="currency-name"></div>
+        </header>
+        <main>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Group 1</th>
+                    </tr>
+                </thead>
+                <tbody id="group1"></tbody>
+                <tfoot>
+                    <tr>
+                        <th>Count:</th>
+                        <td id="group1-count"></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Group 2</th>
+                    </tr>
+                </thead>
+                <tbody id="group2"></tbody>
+                <tfoot>
+                    <tr>
+                        <th>Count:</th>
+                        <td id="group2-count"></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Group 3</th>
+                    </tr>
+                </thead>
+                <tbody id="group3"></tbody>
+                <tfoot>
+                    <tr>
+                        <th>Count:</th>
+                        <td id="group3-count"></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </main>
+        <div class="loading">
+            <div id="loader"></div>
+        </div>
+    </body>
+</html>
